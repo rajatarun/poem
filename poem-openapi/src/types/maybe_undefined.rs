@@ -146,7 +146,7 @@ impl<T> MaybeUndefined<T> {
         matches!(self, MaybeUndefined::Value(_))
     }
 
-    /// Returns `None` if the the `MaybeUndefined<T>` is
+    /// Returns `None` if the `MaybeUndefined<T>` is
     /// `undefined` or `null`, otherwise returns `Some(&T)`.
     #[inline]
     pub const fn value(&self) -> Option<&T> {
@@ -156,7 +156,7 @@ impl<T> MaybeUndefined<T> {
         }
     }
 
-    /// Returns `None` if the the `MaybeUndefined<T>` is
+    /// Returns `None` if the `MaybeUndefined<T>` is
     /// `undefined` or `null`, otherwise returns `Some(&mut T)`.
     #[inline]
     pub fn value_mut(&mut self) -> Option<&mut T> {
